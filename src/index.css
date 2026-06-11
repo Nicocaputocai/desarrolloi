@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  /* Paleta cromática - Desarrollo i */
+  --color-azul-noche: #183A52;
+  --color-verde-monte: #3A6B4A;
+  --color-terracota: #E85D3C;
+  --color-crema: #FAF6EE;
+  --color-blanco: #FFFFFF;
+  --color-amarillo: #E88547;
+
+  /* Tipografías */
+  --font-sans: "General Sans", "Inter", sans-serif;
+  --font-serif: "Fraunces", "Georgia", serif;
+}
