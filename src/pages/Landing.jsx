@@ -15,10 +15,16 @@ export default function Landing() {
       <Manifesto />
       
       {/* 3. La grilla estilo Sylvera con los 8 proyectos del instituto */}
-      <NuestrosTrabajos />
+      {/* ACÁ AGREGAMOS EL ID PARA EL SCROLL */}
+      <div id="trabajos">
+        <NuestrosTrabajos />
+      </div>
       
-      {/* 4. Bloque terracota para llamado a la acción comunitaria */}
-      <Voluntariado />
+      {/* 4. Bloque terracota/verde para llamado a la acción comunitaria */}
+      {/* ACÁ AGREGAMOS EL ID PARA EL SCROLL */}
+      <div id="voluntariado">
+        <Voluntariado />
+      </div>
     </div>
   );
 }

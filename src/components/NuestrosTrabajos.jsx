@@ -46,7 +46,7 @@ const trabajos = [
     bgImage: 'bg-azul-noche'
   },
   {
-    id: 6, titulo: 'Ord. Puntos Verdes',
+    id: 6, titulo: 'Ordenanza Puntos Verdes',
     categoria: 'Normativa', colorPildora: 'bg-azul-noche text-blanco border border-blanco/20',
     descripcion: 'Proyecto legislativo para estandarizar la gestión de reciclables.',
     url: '/ordenanza.pdf', tipoAccion: 'descarga',

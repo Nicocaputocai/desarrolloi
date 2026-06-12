@@ -1,161 +1,125 @@
 import React from 'react';
 
-export default function Guardianes() {
+// Simulamos los datasets que tendrían disponibles
+const datasets = [
+  {
+    id: 1,
+    titulo: 'Censo de Arbolado Público Urbano',
+    categoria: 'Biodiversidad',
+    descripcion: 'Relevamiento geolocalizado de especies nativas y exóticas, estado fitosanitario y diámetro.',
+    actualizacion: 'Mayo 2026',
+    formatos: ['CSV', 'GeoJSON']
+  },
+  {
+    id: 2,
+    titulo: 'Islas de Calor Urbano (Verano 2025/2026)',
+    categoria: 'Clima',
+    descripcion: 'Temperaturas superficiales registradas por sensores satelitales en los 40 municipios del AMBA.',
+    actualizacion: 'Marzo 2026',
+    formatos: ['CSV', 'JSON']
+  },
+  {
+    id: 3,
+    titulo: 'Puntos Verdes de Recepción',
+    categoria: 'Residuos',
+    descripcion: 'Ubicación, horarios y materiales aceptados en los centros de recepción de reciclables cooperativos.',
+    actualizacion: 'Abril 2026',
+    formatos: ['CSV', 'JSON']
+  },
+  {
+    id: 4,
+    titulo: 'Calidad del Aire',
+    categoria: 'Contaminación',
+    descripcion: 'Medición de material particulado (PM2.5 y PM10) en nodos de alto tránsito vehicular.',
+    actualizacion: 'Junio 2026',
+    formatos: ['CSV']
+  }
+];
+
+export default function DatosAbiertos() {
   return (
-    <div className="bg-crema min-h-screen selection:bg-verde-monte/20">
+    <div className="bg-crema min-h-screen pb-24">
       
-      {/* HEADER EDITORIAL */}
-      <header className="pt-24 pb-16 md:pt-32 md:pb-24 px-6 lg:px-8 border-b border-azul-noche/5">
-        <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
-          <div className="lg:col-span-8">
-            <div className="flex items-center gap-4 mb-6">
-               <span className="w-12 h-[2px] bg-terracota"></span>
-               <span className="font-sans text-xs font-bold uppercase tracking-[0.2em] text-azul-noche/60">
-                 Programa Institucional
-               </span>
-            </div>
-            <h1 className="font-sans text-5xl md:text-7xl lg:text-8xl font-bold text-azul-noche leading-[1] tracking-tight max-w-4xl">
-              Formar guardianes de la <span className="font-serif italic font-normal text-terracota">Casa Común.</span>
-            </h1>
+      {/* ENCABEZADO TÉCNICO */}
+      <div className="bg-azul-noche pt-24 pb-16 px-6 lg:px-8 border-b-4 border-amarillo">
+        <div className="max-w-[1000px] mx-auto">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="w-2 h-2 rounded-full bg-verde-monte"></span>
+            <span className="font-sans text-xs font-bold uppercase tracking-[0.2em] text-crema/60">
+              Repositorio Público
+            </span>
           </div>
-
-          <div className="lg:col-span-4 lg:pl-12 border-l-2 border-verde-monte lg:py-2">
-            <p className="font-sans text-base text-azul-noche/70 leading-relaxed">
-              El programa lleva la participación comunitaria y la acción climática a las aulas del AMBA, transformando a estudiantes de secundaria en protagonistas de su entorno.
-            </p>
-          </div>
-        </div>
-      </header>
-
-      {/* MANIFIESTO */}
-      <section className="bg-terracota py-20 px-6 lg:px-8">
-        <div className="max-w-[1000px] mx-auto text-center">
-          <h2 className="font-serif italic text-3xl md:text-5xl text-crema leading-tight mb-8">
-            «La educación ambiental es también educación para la democracia.»
-          </h2>
-          <p className="font-sans text-lg text-crema/90 max-w-2xl mx-auto leading-relaxed">
-            No basta con reciclar: necesitamos repensar cómo habitamos y decidimos. Formar guardianes empieza en la escuela, con un ciclo de ecología integral y acción colectiva.
+          <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl font-bold text-crema tracking-tight mb-6">
+            Datos Abiertos
+          </h1>
+          <p className="font-serif text-xl text-crema/80 max-w-2xl leading-relaxed">
+            Accedé a nuestros datasets estructurados. Información empírica sobre el AMBA para potenciar la investigación, el periodismo de datos y el diseño de políticas públicas.
           </p>
         </div>
-      </section>
+      </div>
 
-      {/* METODOLOGÍA: LOS 4 CAMINOS */}
-      <section className="py-24 px-6 lg:px-8 bg-crema relative overflow-hidden">
-        <div className="absolute -bottom-20 -left-20 w-64 h-64 rounded-full border-[12px] border-azul-noche/5 pointer-events-none"></div>
-
-        <div className="max-w-[1400px] mx-auto relative z-10">
-          <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-8">
-            <div>
-              <p className="font-sans text-sm font-bold uppercase tracking-[0.2em] text-terracota mb-4">La Propuesta</p>
-              <h2 className="font-sans text-4xl md:text-5xl font-bold text-azul-noche">
-                Cuatro caminos de acción.
-              </h2>
-            </div>
-            <p className="font-serif italic text-xl text-azul-noche/70 max-w-sm md:text-right">
-              Aprender, medir, decidir y plantar: el ciclo completo del cuidado.
-            </p>
+      {/* LISTADO DE DATASETS */}
+      <div className="max-w-[1000px] mx-auto px-6 lg:px-8 mt-12">
+        
+        {/* Barra de búsqueda / Filtros (Visual por ahora) */}
+        <div className="flex flex-col sm:flex-row justify-between items-center bg-blanco p-4 rounded-lg border border-azul-noche/10 mb-8 shadow-sm">
+          <div className="font-sans text-azul-noche font-semibold text-sm mb-4 sm:mb-0">
+            {datasets.length} conjuntos de datos disponibles
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-azul-noche p-8 rounded-2xl flex flex-col h-64 justify-between transition-transform duration-300 hover:-translate-y-1 shadow-sm">
-              <span className="w-12 h-12 rounded-full bg-crema text-azul-noche flex items-center justify-center font-bold text-xl">01</span>
-              <div>
-                <p className="font-sans text-[10px] font-bold uppercase tracking-widest text-amarillo mb-2">Aprender</p>
-                <h3 className="font-sans text-xl font-bold text-crema leading-tight">Cambio climático y naturaleza</h3>
-              </div>
-            </div>
-            <div className="bg-verde-monte p-8 rounded-2xl flex flex-col h-64 justify-between transition-transform duration-300 hover:-translate-y-1 shadow-sm">
-              <span className="w-12 h-12 rounded-full bg-crema text-verde-monte flex items-center justify-center font-bold text-xl">02</span>
-              <div>
-                <p className="font-sans text-[10px] font-bold uppercase tracking-widest text-amarillo mb-2">Censar</p>
-                <h3 className="font-sans text-xl font-bold text-crema leading-tight">Árboles del barrio con tecnología</h3>
-              </div>
-            </div>
-            <div className="bg-terracota p-8 rounded-2xl flex flex-col h-64 justify-between transition-transform duration-300 hover:-translate-y-1 shadow-sm">
-              <span className="w-12 h-12 rounded-full bg-crema text-terracota flex items-center justify-center font-bold text-xl">03</span>
-              <div>
-                <p className="font-sans text-[10px] font-bold uppercase tracking-widest text-crema/70 mb-2">Decidir</p>
-                <h3 className="font-sans text-xl font-bold text-crema leading-tight">Participar, debatir y decidir en común</h3>
-              </div>
-            </div>
-            <div className="bg-amarillo p-8 rounded-2xl flex flex-col h-64 justify-between transition-transform duration-300 hover:-translate-y-1 shadow-sm">
-              <span className="w-12 h-12 rounded-full bg-azul-noche text-amarillo flex items-center justify-center font-bold text-xl">04</span>
-              <div>
-                <p className="font-sans text-[10px] font-bold uppercase tracking-widest text-azul-noche/60 mb-2">Plantar</p>
-                <h3 className="font-sans text-xl font-bold text-azul-noche leading-tight">Cuidar especies nativas</h3>
-              </div>
-            </div>
+          <div className="flex gap-2 w-full sm:w-auto">
+            <input 
+              type="text" 
+              placeholder="Buscar por palabra clave..." 
+              className="bg-crema border border-azul-noche/10 rounded px-4 py-2 text-sm font-sans w-full sm:w-64 focus:outline-none focus:border-terracota transition-colors"
+            />
+            <button className="bg-azul-noche text-crema px-4 py-2 rounded text-sm font-sans font-bold hover:bg-azul-noche/80 transition-colors">
+              Buscar
+            </button>
           </div>
         </div>
-      </section>
 
-      {/* EL TERRITORIO: LAS 4 CLASES (Grilla de 4 columnas) */}
-      <section className="py-24 px-6 lg:px-8 bg-blanco border-y border-azul-noche/5 relative overflow-hidden">
-        <div className="max-w-[1400px] mx-auto">
-          <div className="mb-16 max-w-2xl">
-            <h2 className="font-sans text-4xl md:text-5xl font-bold text-azul-noche mb-6 tracking-tight">
-              El territorio como aula.
-            </h2>
-            <p className="font-serif text-xl text-azul-noche/70 leading-relaxed">
-              A través de cuatro encuentros, llevamos los conceptos ambientales a la realidad inmediata de cada barrio.
-            </p>
-          </div>
+        {/* Grilla de Datos */}
+        <div className="flex flex-col gap-4">
+          {datasets.map((dataset) => (
+            <div key={dataset.id} className="bg-blanco p-6 md:p-8 rounded-lg border border-azul-noche/10 hover:border-terracota/50 transition-colors shadow-sm group">
+              <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
+                
+                {/* Info Principal */}
+                <div className="flex-1">
+                  <div className="flex items-center gap-3 mb-2">
+                    <span className="font-sans text-[10px] font-bold uppercase tracking-widest text-terracota">
+                      {dataset.categoria}
+                    </span>
+                    <span className="font-sans text-[10px] text-azul-noche/40">
+                      Actualizado: {dataset.actualizacion}
+                    </span>
+                  </div>
+                  <h2 className="font-sans text-2xl font-bold text-azul-noche mb-2 group-hover:text-terracota transition-colors">
+                    {dataset.titulo}
+                  </h2>
+                  <p className="font-serif text-azul-noche/70 text-sm">
+                    {dataset.descripcion}
+                  </p>
+                </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12 lg:gap-10">
-            {/* Clase 1 */}
-            <div className="flex flex-col gap-5 group">
-              <div className="aspect-[3/4] bg-crema rounded-2xl overflow-hidden relative shadow-inner"></div>
-              <div className="flex-grow flex flex-col">
-                <span className="inline-block px-3 py-1 bg-verde-monte/10 text-verde-monte rounded-full text-[10px] font-bold uppercase tracking-widest mb-3 w-fit">Encuentro 1</span>
-                <h3 className="font-sans text-2xl font-bold text-azul-noche mb-2">Mitigar y adaptar.</h3>
-                <p className="font-sans text-azul-noche/70 text-sm leading-relaxed mt-auto">Trabajamos sobre contaminación, residuos y biodiversidad.</p>
+                {/* Botones de Formatos */}
+                <div className="flex flex-wrap gap-2 md:w-48 justify-start md:justify-end">
+                  {dataset.formatos.map((formato, index) => (
+                    <button 
+                      key={index}
+                      className="inline-flex items-center justify-center bg-crema border border-azul-noche/10 text-azul-noche font-sans text-xs font-bold px-3 py-1.5 rounded hover:bg-verde-monte hover:text-crema hover:border-verde-monte transition-colors"
+                    >
+                      {formato} ↓
+                    </button>
+                  ))}
+                </div>
+                
               </div>
             </div>
-            {/* Clase 2 */}
-            <div className="flex flex-col gap-5 group">
-              <div className="aspect-[3/4] bg-crema rounded-2xl overflow-hidden relative shadow-inner"></div>
-              <div className="flex-grow flex flex-col">
-                <span className="inline-block px-3 py-1 bg-terracota/10 text-terracota rounded-full text-[10px] font-bold uppercase tracking-widest mb-3 w-fit">Encuentro 2</span>
-                <h3 className="font-sans text-2xl font-bold text-azul-noche mb-2">Mirar el relieve.</h3>
-                <p className="font-sans text-azul-noche/70 text-sm leading-relaxed mt-auto">Aprendemos a leer el territorio para poder transformarlo.</p>
-              </div>
-            </div>
-            {/* Clase 3 */}
-            <div className="flex flex-col gap-5 group">
-              <div className="aspect-[3/4] bg-crema rounded-2xl overflow-hidden relative shadow-inner"></div>
-              <div className="flex-grow flex flex-col">
-                <span className="inline-block px-3 py-1 bg-amarillo/20 text-azul-noche rounded-full text-[10px] font-bold uppercase tracking-widest mb-3 w-fit">Encuentro 3</span>
-                <h3 className="font-sans text-2xl font-bold text-azul-noche mb-2">Nativas vs. exóticas.</h3>
-                <p className="font-sans text-azul-noche/70 text-sm leading-relaxed mt-auto">Cada especie que plantamos define qué biodiversidad cuidamos.</p>
-              </div>
-            </div>
-            {/* Clase 4 */}
-            <div className="flex flex-col gap-5 group">
-              <div className="aspect-[3/4] bg-crema rounded-2xl overflow-hidden relative shadow-inner"></div>
-              <div className="flex-grow flex flex-col">
-                <span className="inline-block px-3 py-1 bg-azul-noche/10 text-azul-noche rounded-full text-[10px] font-bold uppercase tracking-widest mb-3 w-fit">Encuentro 4</span>
-                <h3 className="font-sans text-2xl font-bold text-azul-noche mb-2">Tecnología cívica.</h3>
-                <p className="font-sans text-azul-noche/70 text-sm leading-relaxed mt-auto">Tecnología al servicio de la Casa Común y el cuidado del entorno.</p>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
-      </section>
 
-      {/* CTA FINAL */}
-      <section className="bg-verde-monte py-24 px-6 lg:px-8">
-        <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-          <div className="md:col-span-7">
-            <h2 className="font-sans text-5xl md:text-6xl font-bold text-crema leading-[1.05] tracking-tight mb-8">
-              ¿Sos parte de una escuela o organización?
-            </h2>
-            <p className="font-serif italic text-2xl text-crema/90">Construyamos guardianes en cada barrio.</p>
-          </div>
-          <div className="md:col-span-5 flex md:justify-end">
-            <a href="mailto:institucional@desarrolloi.org" className="bg-terracota text-crema font-bold py-5 px-10 rounded-full hover:bg-terracota/90 transition-all shadow-xl">Contactanos →</a>
-          </div>
-        </div>
-      </section>
+      </div>
     </div>
   );
 }
