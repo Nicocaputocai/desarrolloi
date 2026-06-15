@@ -32,9 +32,6 @@ export default function Footer() {
           <p className="text-azul-noche/80 font-serif italic text-xl max-w-sm mb-3 mt-8">
             Entre el conocimiento y el territorio.
           </p>
-          <p className="text-azul-noche/50 font-sans text-xs uppercase tracking-[0.25em] font-bold">
-            Asociación Civil
-          </p>
         </div>
         
         {/* Columna 2: Navegación Institucional */}
@@ -49,13 +46,13 @@ export default function Footer() {
         {/* Columna 3: Contacto y Redes con iconos reales */}
         <div className="flex flex-col gap-5 font-sans pt-4 md:pt-10">
           <h3 className="text-verde-monte font-bold tracking-[0.2em] uppercase text-xs mb-3">Contacto</h3>
-          <a href="mailto:institucional@desarrolloi.org" className="text-azul-noche font-bold hover:text-verde-monte text-sm transition-colors w-fit">
-            desarrolloi.lanus@gmail.com
+          <a href="mailto:info@desarrolloi.org" className="text-azul-noche font-bold hover:text-verde-monte text-sm transition-colors w-fit">
+            info@desarrolloi.org
           </a>
           <div className="mt-6 flex gap-6 items-center">
             {/* Redes Sociales - Iconos SVG reales y responsivos */}
             <a 
-              href="#" 
+              href="https://www.instagram.com/desarrolloi?igsh=MTlocnIycjltbTVmYg==" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-azul-noche hover:text-terracota transition-all duration-300 hover:scale-110 flex items-center justify-center p-1"
@@ -64,7 +61,7 @@ export default function Footer() {
               <IconInstagram />
             </a>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/company/desarrolloi/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-azul-noche hover:text-terracota transition-all duration-300 hover:scale-110 flex items-center justify-center p-1"

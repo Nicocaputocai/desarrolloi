@@ -20,7 +20,7 @@ export default function Manifesto() {
           </div>
 
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-crema leading-[1.2] tracking-tight max-w-2xl">
-            «El cuidado de la casa común no termina.{" "}
+            «El cuidado de la <br/>casa común  no termina.{" "}
             <br className="hidden sm:block" />
             <span className="italic text-terracota">Empieza otra vez.</span>»
           </h2>
@@ -33,7 +33,7 @@ export default function Manifesto() {
               Nuestra brújula
             </p>
             <p className="font-sans text-[10px] text-crema/40 uppercase tracking-[0.15em] mt-0.5 font-bold">
-              Asociación Civil Desarrollo i
+              Desarrollo i
             </p>
           </div>
 

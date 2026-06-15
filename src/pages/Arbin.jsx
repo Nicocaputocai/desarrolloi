@@ -254,7 +254,7 @@ export default function Arbin() {
                 </p>
               </div>
               <a
-                href="mailto:institucional@desarrolloi.org"
+                href="mailto:info@desarrolloi.org"
                 className="text-amarillo font-sans font-bold flex items-center hover:text-crema transition-colors"
               >
                 Solicitar demo técnica →
