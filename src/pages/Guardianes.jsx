@@ -21,7 +21,7 @@ export default function Guardianes() {
 
           <div className="lg:col-span-4 lg:pl-12 border-l-2 border-verde-monte lg:py-2">
             <p className="font-sans text-base text-azul-noche/70 leading-relaxed">
-              El programa integra educación, tecnología y participación comunitaria para escuelas secundarias, generando experiencias pedagógicas transformadoras.
+              El programa integra educación ambiental, tecnología y participación ciudadana para escuelas secundarias, generando experiencias pedagógicas transformadoras.
             </p>
           </div>
         </div>
@@ -72,7 +72,7 @@ export default function Guardianes() {
               <span className="w-12 h-12 rounded-full bg-crema text-verde-monte flex items-center justify-center font-bold text-xl">02</span>
               <div>
                 <p className="font-sans text-[10px] font-bold uppercase tracking-widest text-amarillo mb-2">Trabajo Territorial</p>
-                <h3 className="font-sans text-xl font-bold text-crema leading-tight">Censo participativo con aplicación móvil Arbin</h3>
+                <h3 className="font-sans text-xl font-bold text-crema leading-tight">Relevamiento participativo con aplicación móvil Arbin</h3>
               </div>
             </div>
             {/* Tarjeta 3 */}
@@ -88,7 +88,7 @@ export default function Guardianes() {
               <span className="w-12 h-12 rounded-full bg-azul-noche text-amarillo flex items-center justify-center font-bold text-xl">04</span>
               <div>
                 <p className="font-sans text-[10px] font-bold uppercase tracking-widest text-azul-noche/60 mb-2">Implementación</p>
-                <h3 className="font-sans text-xl font-bold text-azul-noche leading-tight">Acciones pensadas por la comunidad</h3>
+                <h3 className="font-sans text-xl font-bold text-azul-noche leading-tight">Acciones pensadas por la comunidad para la adaptación climática</h3>
               </div>
             </div>
           </div>
@@ -110,7 +110,7 @@ export default function Guardianes() {
               Contenido de los encuentros.
             </h2>
             <p className="font-serif text-xl text-azul-noche/70 leading-relaxed">
-              A lo largo de cuatro clases, los estudiantes construyen los conocimientos necesarios para prepararse para la acción territorial.
+              A lo largo de los 4 módulos, los estudiantes construyen los conocimientos necesarios para prepararse para la acción territorial.
             </p>
           </div>
 

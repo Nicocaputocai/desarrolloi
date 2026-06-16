@@ -46,41 +46,25 @@ export default function HeroSection() {
             No somos un think tank puro ni una ONG social pura: nuestro valor
             está en la articulación entre ambos mundos.
           </p>
-
         </div>
-
-{/* FOTO VERTICAL (Diseño Editorial con Estructura Desplazada y Marco Fino) */}
-        <div className="lg:col-span-5 relative mt-12 lg:mt-0 flex items-center justify-center lg:justify-end lg:pr-8">
-          
-          {/* Restringimos el ancho para mantener el formato retrato perfecto */}
+    {/* Imagen */}
+        {/* <div className="lg:col-span-5 relative mt-12 lg:mt-0 flex items-center justify-center lg:justify-end lg:pr-8">
           <div className="relative w-full max-w-[360px] xl:max-w-[400px] group">
-            
-            {/* Líneas y sombras estructurales desplazadas */}
-            {/* Borde verde que se separa al hacer hover */}
             <div className="absolute top-3 left-3 w-full h-full border-2 border-verde-monte rounded-3xl transition-all duration-500 ease-out group-hover:top-5 group-hover:left-5 z-0 pointer-events-none"></div>
-            {/* Bloque terracota de fondo que le da peso y base */}
             <div className="absolute top-6 left-6 w-full h-full bg-terracota/10 rounded-3xl transition-all duration-500 ease-out group-hover:top-8 group-hover:left-8 z-0 pointer-events-none"></div>
 
-            {/* Contenedor principal de la foto (Marco blanco ultra fino) */}
             <div className="relative bg-blanco p-1.5 rounded-3xl shadow-lg z-10 transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:-translate-x-1">
-              
               <div className="relative w-full aspect-[4/5] rounded-[1.25rem] overflow-hidden bg-azul-noche/5">
-                {/* Imagen estática y nítida */}
-                <img 
-                  src="/banner 3.jpeg" 
-                  alt="Equipo de Desarrollo i trabajando en el territorio" 
-                  className="w-full h-full object-cover object-center" 
+                <img
+                  src="/banner 3.jpeg"
+                  alt="Equipo de Desarrollo i trabajando en el territorio"
+                  className="w-full h-full object-cover object-center"
                 />
-                
-                {/* Borde interno ultra sutil para que la foto no se "funda" con el blanco */}
                 <div className="absolute inset-0 ring-1 ring-inset ring-black/5 rounded-[1.25rem] pointer-events-none"></div>
               </div>
-
             </div>
-
           </div>
-        </div>
-
+        </div> */}
       </div>
     </section>
   );

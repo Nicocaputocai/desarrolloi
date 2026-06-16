@@ -19,10 +19,10 @@ export default function Manifesto() {
             </span>
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-crema leading-[1.2] tracking-tight max-w-2xl">
-            «El cuidado de la <br/>casa común  no termina.{" "}
+        <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-crema leading-[1.2] tracking-tight max-w-2xl">
+            «Una ecología integral para{" "}
             <br className="hidden sm:block" />
-            <span className="italic text-terracota">Empieza otra vez.</span>»
+            <span className="italic text-terracota"> el cuidado de la casa común</span>»
           </h2>
         </div>
 

@@ -14,7 +14,13 @@ const navLinks = [
     hashId: "voluntariado",
     isHash: true,
   },
-   { name: "Guardianes de la Casa Común", path: "/guardianes", isHash: false }
+   { name: "Guardianes de la Casa Común", path: "/guardianes", isHash: false },
+     {
+    name: "Quienes somos",
+    path: "/nosotros",
+    hashId: "trabajos",
+    isHash: true,
+  },
 ];
 
 export default function Navbar() {

@@ -25,12 +25,11 @@ export default function Voluntariado() {
           </h2>
 
           <p className="font-sans text-lg text-crema/90 max-w-lg mb-10 leading-relaxed">
-            La transformación real exige poner el cuerpo. Creemos en el conocimiento aplicado y en la fuerza de la
+            La transformación real exige compromiso. Creemos en el conocimiento aplicado y en la fuerza de la
             participación ciudadana para lograr un impacto real. Nuestras jornadas son el
-            lugar donde esa articulación sucede: relevamos información de campo,
-            forestamos nuestras calles y llevamos educación ambiental a las
-            aulas. Si buscás que tu compromiso tenga un impacto directo y
-            medible, tu lugar está acá.
+            lugar donde esa articulación sucede: sensibilizamos, relevamos información de campo,
+             y llevamos educación y la acción ambiental al territorio. <br/>
+             Si buscás que tu compromiso tenga un impacto directo y medible, tu lugar está acá.
 
           </p>
 

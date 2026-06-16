@@ -215,7 +215,7 @@ export default function Arbin() {
             <p className="font-sans text-azul-noche/70 mb-8 relative z-10">
               Arbin no es solo una herramienta de recolección cerrada. Cuenta
               con un <strong>Front End de Datos Abiertos</strong> diseñado para
-              que los vecinos puedan visualizar la información de su ciudad,
+              que los ciudadanos puedan visualizar la información de su ciudad,
               fomentando la transparencia y la participación ciudadana.
             </p>
             <Link
@@ -273,7 +273,7 @@ export default function Arbin() {
                   La tecnología solo es transformadora si se apropia.
                   Actualmente, Arbin es el motor tecnológico del programa{" "}
                   <em>Guardianes de la Casa Común</em>, permitiendo que
-                  estudiantes de secundaria censen el arbolado de sus propios
+                  estudiantes de secundaria releven el arbolado de sus propios
                   barrios.
                 </p>
               </div>
