@@ -7,7 +7,7 @@ const trabajos = [
   {
     id: 1, titulo: 'Guardianes de la Casa Común',
     categoria: 'Territorio y Ambiente', colorPildora: 'bg-verde-monte text-crema',
-    descripcion: 'Participación ciudadana y tecnología en escuelas secundarias.',
+    descripcion: 'Educación ambiental, participación ciudadana y tecnología en escuelas secundarias.',
     url: '/guardianes', tipoAccion: 'interno',
     bgImage: 'bg-verde-monte'
   },
@@ -24,6 +24,7 @@ const trabajos = [
     id: 3, titulo: 'Mapa Interactivo',
     categoria: 'Tecnología y Datos', colorPildora: 'bg-azul-noche text-crema',
     descripcion: 'Mapa interactivo de la infraestructura y espacios públicos de Lanús.',
+    target: "_blank",
     url: 'https://mapa.desarrolloi.org/', tipoAccion: 'externo',
     bgImage: 'bg-azul-noche' 
   },
@@ -51,21 +52,24 @@ const trabajos = [
     id: 6, titulo: 'Ordenanza Puntos Verdes',
     categoria: 'Normativa', colorPildora: 'bg-terracota text-crema',
     descripcion: 'Proyecto para la gestión diferenciada de Residuos Sólidos Urbanos.',
-    url: '/ordenanza.pdf', tipoAccion: 'descarga',
+    target: "_blank",
+    url: 'https://drive.google.com/file/d/1DcItgwph0pX_ukYGTj5i4xcC7UdarfGS/view?usp=drive_link', tipoAccion: 'descarga',
     bgImage: 'bg-terracota'
   },
   {
     id: 7, titulo: 'Políticas Criminales I',
     categoria: 'Investigación', colorPildora: 'bg-terracota text-crema',
-    descripcion: 'Intersección entre gestión territorial y seguridad ciudadana.',
-    url: '/libro-1.pdf', tipoAccion: 'descarga',
+    descripcion: 'Debates y reflexiones acerca de las políticas públicas y la seguridad ciudadana.',
+    target: "_blank",
+    url: 'https://drive.google.com/file/d/1cwBmJ5ini6rNh31r8jZh0kIvntddVfV9/view?usp=drive_link', tipoAccion: 'descarga',
     bgImage: 'bg-terracota'
   },
   {
     id: 8, titulo: 'Políticas Criminales II',
     categoria: 'Investigación', colorPildora: 'bg-terracota text-crema',
-    descripcion: 'Segunda parte de la investigación aplicada a dinámicas del AMBA.',
-    url: '/libro-2.pdf', tipoAccion: 'descarga',
+    descripcion: 'En esta segunda presentación se enfoca en la construcción de comunidades pacíficas y sostenibles.',
+    url: 'https://drive.google.com/file/d/1ef_VDdmTMUA1N4GkkAtCJCBakWdjVCTp/view?usp=drive_link', tipoAccion: 'descarga',
+    target: "_blank",
     bgImage: 'bg-terracota'
   },
 
