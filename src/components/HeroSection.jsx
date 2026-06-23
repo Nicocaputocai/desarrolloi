@@ -3,6 +3,7 @@ import React from "react";
 export default function HeroSection() {
   return (
     <section className="bg-crema relative overflow-hidden pt-20 pb-24 lg:pt-24 lg:pb-32 px-6 lg:px-8 min-h-[85vh] flex items-center">
+      
       {/* Geometría de fondo */}
       <div className="absolute top-0 right-0 w-full h-full opacity-30 pointer-events-none">
         <div className="absolute top-20 -right-20 w-96 h-96 rounded-full border-[2px] border-azul-noche/10"></div>
@@ -10,9 +11,10 @@ export default function HeroSection() {
         <div className="absolute -bottom-20 -left-20 w-[500px] h-[500px] rounded-full border-[40px] border-verde-monte/5"></div>
       </div>
 
-      <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 relative z-10 w-full">
+      <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 relative z-10 w-full items-center">
+        
         {/* TEXTO PRINCIPAL */}
-        <div className="lg:col-span-7 flex flex-col justify-center">
+        <div className="lg:col-span-6 flex flex-col justify-center">
           <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-verde-monte/10 border border-verde-monte/20 mb-6 lg:mb-8 w-fit">
             <span className="w-2.5 h-2.5 rounded-full bg-verde-monte animate-pulse"></span>
             <span className="font-sans text-xs md:text-sm font-bold uppercase tracking-widest text-verde-monte">
@@ -20,9 +22,9 @@ export default function HeroSection() {
             </span>
           </div>
 
-          <h1 className="font-sans font-extrabold text-azul-noche leading-[1.05] tracking-tight mb-6 lg:mb-8 text-5xl sm:text-6xl lg:text-[4rem] xl:text-[5rem] max-w-3xl">
+          <h1 className="font-sans font-extrabold text-azul-noche leading-[1.05] tracking-tight mb-6 lg:mb-8 text-5xl sm:text-6xl lg:text-[4rem] xl:text-[4.5rem] max-w-2xl">
             El puente entre el conocimiento y el{" "}
-            <br className="hidden md:block" />
+            <br className="hidden xl:block" />
             <span className="relative inline-block mt-2">
               <span className="text-verde-monte">territorio.</span>
               <svg
@@ -41,30 +43,29 @@ export default function HeroSection() {
             </span>
           </h1>
 
-          {/* Bajada con el copy exacto de tu captura */}
-          <p className="font-serif italic text-xl md:text-2xl text-azul-noche/80 leading-relaxed max-w-xl lg:max-w-2xl mb-10 lg:mb-12">
-            No somos un think tank puro ni una ONG social pura: nuestro valor
-            está en la articulación entre ambos mundos.
+          {/* BAJADA CORREGIDA Y MODERNIZADA (Sans-serif, sin cursiva, mejor contraste) */}
+          <p className="font-sans text-lg md:text-xl text-azul-noche/90 leading-relaxed max-w-xl font-medium">
+            Conectamos el análisis y la investigación con las necesidades de las comunidades. Desde la sociedad civil, articulamos ambos mundos para diseñar y aplicar políticas públicas con impacto en el territorio.
           </p>
         </div>
-    {/* Imagen */}
-        {/* <div className="lg:col-span-5 relative mt-12 lg:mt-0 flex items-center justify-center lg:justify-end lg:pr-8">
-          <div className="relative w-full max-w-[360px] xl:max-w-[400px] group">
-            <div className="absolute top-3 left-3 w-full h-full border-2 border-verde-monte rounded-3xl transition-all duration-500 ease-out group-hover:top-5 group-hover:left-5 z-0 pointer-events-none"></div>
-            <div className="absolute top-6 left-6 w-full h-full bg-terracota/10 rounded-3xl transition-all duration-500 ease-out group-hover:top-8 group-hover:left-8 z-0 pointer-events-none"></div>
 
-            <div className="relative bg-blanco p-1.5 rounded-3xl shadow-lg z-10 transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:-translate-x-1">
-              <div className="relative w-full aspect-[4/5] rounded-[1.25rem] overflow-hidden bg-azul-noche/5">
-                <img
-                  src="/banner 3.jpeg"
-                  alt="Equipo de Desarrollo i trabajando en el territorio"
-                  className="w-full h-full object-cover object-center"
-                />
-                <div className="absolute inset-0 ring-1 ring-inset ring-black/5 rounded-[1.25rem] pointer-events-none"></div>
-              </div>
-            </div>
+        {/* IMAGEN 3D/MAQUETA */}
+        <div className="lg:col-span-6 relative mt-12 lg:mt-0 flex items-center justify-center lg:justify-end">
+          
+          <div className="relative w-full max-w-[650px] z-10 flex justify-center items-center">
+            
+            {/* Opcional: Círculo sutil decorativo detrás de la imagen estilo Carbon Direct */}
+            <div className="absolute top-1/2 right-4 -translate-y-1/2 w-72 h-72 bg-terracota/5 rounded-full -z-10 blur-xl"></div>
+
+            <img
+              src="/hero3.png" // Asegurate de que acá esté la ruta de tu nueva imagen
+              alt="Maqueta de conocimiento y territorio"
+              /* Si la imagen que conseguiste tiene fondo crema liso, dejá el mix-blend-multiply. Si es PNG transparente, podés sacarlo. */
+              className="w-full h-auto object-contain mix-blend-multiply transition-transform duration-700 ease-out hover:scale-[1.03]"
+            />
           </div>
-        </div> */}
+
+        </div>
       </div>
     </section>
   );

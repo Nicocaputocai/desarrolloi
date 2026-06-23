@@ -13,6 +13,7 @@ import DatosAbiertos from './pages/DatosAbiertos';
 import PuntosMoviles from './pages/PuntosMoviles';
 import Guardianes from './pages/Guardianes';
 import Arbin from './pages/Arbin';
+import Nosotros from './pages/Nosotros';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="/puntos-moviles" element={<PuntosMoviles />} />
             <Route path="/guardianes" element={<Guardianes />} />
             <Route path="/arbin" element={<Arbin />} />
+            <Route path="/quienes-somos" element={<Nosotros />} />
           </Routes>
         </main>
 

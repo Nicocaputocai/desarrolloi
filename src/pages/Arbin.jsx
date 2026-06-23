@@ -247,10 +247,10 @@ export default function Arbin() {
                   Gestión de Gobiernos Locales
                 </h3>
                 <p className="font-sans text-crema/70 leading-relaxed mb-8">
-                  Arbin brinda a los municipios una solución lista para usar
-                  ("llave en mano") que moderniza el área de espacios verdes,
-                  permitiendo auditar contratistas, planificar podas y gestionar
-                  el riesgo del arbolado público con evidencia empírica.
+                  Arbin es la plataforma que transforma la gestión del arbolado
+                  público. Aportamos tecnología y datos para
+                  modernizar el cuidado de los espacios verdes, planificar
+                  intervenciones preventivas y gestionar el riesgo urbano de forma inteligente.
                 </p>
               </div>
               <a

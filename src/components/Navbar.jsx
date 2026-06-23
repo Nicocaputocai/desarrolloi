@@ -17,9 +17,9 @@ const navLinks = [
    { name: "Guardianes de la Casa Común", path: "/guardianes", isHash: false },
      {
     name: "Quienes somos",
-    path: "/nosotros",
+    path: "/quienes-somos",
     hashId: "trabajos",
-    isHash: true,
+    isHash: false,
   },
 ];
 
