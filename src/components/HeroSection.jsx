@@ -3,7 +3,6 @@ import React from "react";
 export default function HeroSection() {
   return (
     <section className="bg-crema relative overflow-hidden pt-20 pb-24 lg:pt-24 lg:pb-32 px-6 lg:px-8 min-h-[85vh] flex items-center">
-      
       {/* Geometría de fondo */}
       <div className="absolute top-0 right-0 w-full h-full opacity-30 pointer-events-none">
         <div className="absolute top-20 -right-20 w-96 h-96 rounded-full border-[2px] border-azul-noche/10"></div>
@@ -12,7 +11,6 @@ export default function HeroSection() {
       </div>
 
       <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 relative z-10 w-full items-center">
-        
         {/* TEXTO PRINCIPAL */}
         <div className="lg:col-span-6 flex flex-col justify-center">
           <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-verde-monte/10 border border-verde-monte/20 mb-6 lg:mb-8 w-fit">
@@ -45,15 +43,14 @@ export default function HeroSection() {
 
           {/* BAJADA CORREGIDA Y MODERNIZADA (Sans-serif, sin cursiva, mejor contraste) */}
           <p className="font-sans text-lg md:text-xl text-azul-noche/90 leading-relaxed max-w-xl font-medium">
-            Conectamos el análisis y la investigación con las necesidades de las comunidades. Desde la sociedad civil, articulamos ambos mundos para diseñar y aplicar políticas públicas con impacto en el territorio.
+            Conectamos el análisis y la investigación con las necesidades de las
+            comunidades. Desde la sociedad civil, diseñamos y aplicamos políticas públicas con impacto en el territorio.
           </p>
         </div>
 
         {/* IMAGEN 3D/MAQUETA */}
         <div className="lg:col-span-6 relative mt-12 lg:mt-0 flex items-center justify-center lg:justify-end">
-          
           <div className="relative w-full max-w-[650px] z-10 flex justify-center items-center">
-            
             {/* Opcional: Círculo sutil decorativo detrás de la imagen estilo Carbon Direct */}
             <div className="absolute top-1/2 right-4 -translate-y-1/2 w-72 h-72 bg-terracota/5 rounded-full -z-10 blur-xl"></div>
 
@@ -64,7 +61,6 @@ export default function HeroSection() {
               className="w-full h-auto object-contain mix-blend-multiply transition-transform duration-700 ease-out hover:scale-[1.03]"
             />
           </div>
-
         </div>
       </div>
     </section>
